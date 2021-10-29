@@ -13,10 +13,10 @@
     <header>
         <ul>
             <li>
-                <a href="index.html">Home</a>
+                <a class="texto-menu" href="index.html">Home</a>
             </li>
             <li>
-                <a href="contato.html">Contato</a>
+                <a class="texto-menu" href="contato.html">Contato</a>
             </li>
         </ul>
     </header>
@@ -29,13 +29,16 @@
                 <form>
                     <div class="form-conf">
                         <label for="nome">Nome</label>
-                        <input type="nome" id="nome">
+                        <input type="nome" id="nome" onkeyup="validaNome()">
+                        <div id="txtnome"></div>
 
                         <label for="email">E-mail</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" onkeyup="validaEmail()">
+                        <div id="txtemail"></div>
 
                         <label for="assunto">Assunto</label>
-                        <textarea name="assunto" id="assunto" cols="60" rows="8"></textarea>
+                        <textarea name="assunto" id="assunto" cols="60" rows="8" onkeyup="validaTexto()"></textarea>
+                        <div id="txtassunto"></div>
                     </div>
 
                     <div>
@@ -53,6 +56,14 @@
             </div>
         </div>
     </main>
+
+    <Footer>
+        <p class="centro">
+        Todos os direito reservados: Allison Alberto &copy;
+        </p>
+    </Footer>
+
+    <Script src="assets/js/script.js"></Script>
 </body>
 
 </html>

@@ -10,6 +10,11 @@ header {
     background-color: #FFF275;
 }
 
+.texto-menu{
+    text-decoration: none;
+    color: black;
+}
+
 ul {
     height: 70px;
     display: flex;
@@ -35,8 +40,9 @@ div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin: 0px;
-    padding: 30px 5px; 
+    padding: 15px 5px;
 }
 
 div div{
@@ -46,12 +52,13 @@ div div{
 }
 
 .texto {
-    padding: 0px; 
+    padding: 0px;
+    width: 550px; 
 }
 
 div img {
-    width: 810px;
-    height: 440px;
+    width: 550px;
+    height: 290px;
 }
 
 p {
@@ -122,4 +129,13 @@ button {
 .p-config {
     font-size: 20px;
     padding: 5px 0px 10px;    
+}
+
+footer{
+    background-color: #FFF275;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
 }
